@@ -1,0 +1,276 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #4B0066; /* Purple background */
+}
+
+.container {
+    max-width: 800px; /* Increased max width for PC */
+    margin: 20px auto; /* Add top margin */
+    padding: 40px; /* Increased padding for more space */
+    background-color: white;
+    border-radius: 20px;
+}
+
+/* Location and Profile Section */
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px; /* Increased margin */
+}
+
+.location {
+    display: flex;
+    align-items: center;
+}
+
+.location .icon {
+    width: 25px; /* Slightly larger icon */
+    margin-right: 10px; /* Increased margin */
+}
+
+.profile .profile-icon {
+    width: 40px; /* Slightly larger profile icon */
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    background-color: #f5f5f5;
+    padding: 12px; /* Increased padding */
+    border-radius: 10px;
+    margin-bottom: 25px; /* Increased margin */
+}
+
+.search-bar input {
+    flex: 1;
+    border: none;
+    padding: 12px; /* Increased padding */
+    border-radius: 5px;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.mic-btn .icon {
+    width: 25px; /* Slightly larger mic icon */
+    height: 25px;
+}
+
+/* Work Buttons */
+.work-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px; /* Increased margin */
+}
+
+.work-btn {
+    flex: 1;
+    padding: 15px; /* Increased padding */
+    border-radius: 5px;
+    background-color: #E0E0E0;
+    border: none;
+    font-size: 16px; /* Increased font size */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+.work-btn:hover {
+    background-color: #FF7575; /* Slightly darker on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.work-btn.active {
+    background-color: #FF5757;
+    color: white;
+}
+
+/* Main Image Section */
+.main-image img {
+    width: 800px;
+	height: 500px;
+    border-radius: 10px;
+    margin-bottom: 25px; /* Increased margin */
+}
+
+/* Spacer for More Height */
+.spacer {
+    height: 30px; /* Adjust height as needed */
+}
+
+/* Filter Section */
+.filter-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px; /* Increased margin */
+}
+
+.filter-btn {
+    background-color: #E0E0E0;
+    border: none;
+    padding: 12px; /* Increased padding */
+    border-radius: 5px;
+    font-size: 14px; /* Increased font size */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+.filter-btn:hover {
+    background-color: #FF7575; /* Slightly darker on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Tagline */
+.tagline {
+    text-align: center;
+    margin-bottom: 25px; /* Increased margin */
+}
+
+.tagline p {
+    font-size: 18px; /* Increased font size */
+    color: #333;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px; /* Increased margin */
+}
+
+.action-btn {
+    width: 48%;
+    padding: 20px; /* Increased padding */
+    background-color: #F0F0F0;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+.action-btn:hover {
+    background-color: #FF7575; /* Slightly darker on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.action-btn .icon {
+    width: 35px; /* Slightly larger icon */
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.action-btn span {
+    font-size: 16px; /* Increased font size */
+    color: #333;
+}
+
+/* Footer Navigation */
+footer nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 12px; /* Increased padding */
+    border-radius: 10px;
+}
+
+.nav-link {
+    text-align: center;
+    font-size: 14px; /* Increased font size */
+    color: #333;
+    text-decoration: none; /* Remove underline */
+}
+
+.nav-link img {
+    width: 25px; /* Slightly larger icons */
+    display: block;
+    margin: 0 auto 5px;
+}
+
+.nav-link:hover {
+    color: #FF5757; /* Change color on hover */
+}
+
+/* Media Query for Larger Screens */
+@media (min-width: 768px) {
+    .work-buttons {
+        justify-content: center; /* Center buttons on larger screens */
+    }
+
+    .filter-section {
+        justify-content: space-around; /* Space evenly on larger screens */
+    }
+
+    .action-buttons {
+        flex-direction: row; /* Maintain row direction */
+    }
+}
+/* Title Styling */
+.title {
+    font-size: 48px; /* Larger size for impact */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+        font-family: 'Pacifico', cursive; /* Handwritten font from Google Fonts */
+
+    color: purple;
+
+    /* Subtle gradient to give depth */
+    background: linear-gradient(135deg, #6a0dad, purple, #8a2be2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Enhanced shadow for soft 3D effect */
+    text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.2), 
+        0 0 8px rgba(128, 0, 128, 0.5), 
+        0 0 15px rgba(186, 85, 211, 0.7);
+
+    /* Shimmer animation */
+    position: relative;
+    overflow: hidden;
+}
+.title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%; /* Starts shimmer off-screen */
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+    animation: shimmer 3s infinite;
+}
+
+/* Keyframe for shimmer animation */
+@keyframes shimmer {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+.sort-by {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.icon {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+.icon1 {
+    cursor: pointer;
+    width: 350px;
+    height: 100px;
+}
+.icon2 {
+    cursor: pointer;
+    width: 350px;
+    height: 100px;
+}

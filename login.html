@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="title">Makeito Login</h1>
+        </header>
+        <form action="material_selection.html" method="post">
+            <h2>Login as Customer or Welder</h2>
+            <label for="role">Select Your Role:</label>
+            <select id="role" name="role" required>
+                <option value="">--Select Role--</option>
+                <option value="customer">Customer</option>
+                <option value="welder">Welder</option>
+            </select>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit" class="btn">Login</button>
+        </form>
+    </div>
+</body>
+</html>
