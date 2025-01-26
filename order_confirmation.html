@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Order Confirmation</title>
+</head>
+<body style="font-family: Arial, sans-serif; background: #f3f3f3; margin: 0; padding: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
+    
+    <div class="container" style="max-width: 500px; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); text-align: center;">
+        <header>
+            <h1 style="color: #4B0066; font-size: 28px; margin-bottom: 15px;">Order Confirmation</h1>
+        </header>
+
+        <div class="order-details" style="background: #f9f9f9; padding: 15px; border-radius: 8px; text-align: left; margin-bottom: 20px;">
+            <p style="font-size: 16px; color: #333;"><strong>Shop Selected:</strong> <span id="shopName" style="color: #4B0066;">XYZ Welding Shop</span></p>
+            <p style="font-size: 16px; color: #333;"><strong>Completion Date:</strong> <span id="completionDate" style="color: #4B0066;">November 10, 2024</span></p>
+            <p style="font-size: 16px; color: #333;"><strong>Initial Payment:</strong> <span id="initialPayment" style="color: #4B0066;">$100</span></p>
+            
+            <div class="progress-bar" style="width: 100%; background: #ddd; border-radius: 5px; overflow: hidden; height: 12px; margin-top: 10px;">
+                <div class="progress" style="width: 10%; height: 100%; background: #4B0066; transition: width 0.5s ease-in-out;"></div>
+            </div>
+            <p style="font-size: 14px; color: #4B0066; margin-top: 5px;">Current Progress: 10%</p>
+        </div>
+
+        <button class="btn" onclick="location.href='progress_tracking.html';" 
+            style="background: #4B0066; color: #fff; font-size: 18px; padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer; transition: 0.3s ease; width: 100%;">
+            Track Progress
+        </button>
+    </div>
+
+    <footer style="margin-top: 20px; text-align: center;">
+        <p style="color: #555; font-size: 14px;">&copy; 2024 <span style="color: #4B0066;">Makeito</span>. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

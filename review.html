@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Review</title>
+</head>
+<body style="font-family: Arial, sans-serif; background: #f3f3f3; margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh;">
+   
+    <div class="container" style="max-width: 500px; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); text-align: center;">
+        <header>
+            <h1 style="color: #4B0066; font-size: 28px; margin-bottom: 15px;">Feedback</h1>
+        </header>
+
+        <h2 style="color: #4B0066; font-size: 22px; margin-bottom: 10px;">Please rate your experience:</h2>
+        <select style="width: 100%; padding: 10px; font-size: 18px; border: 1px solid #ccc; border-radius: 5px; margin-bottom: 15px; cursor: pointer;">
+            <option value="5">⭐️⭐️⭐️⭐️⭐️</option>
+            <option value="4">⭐️⭐️⭐️⭐️</option>
+            <option value="3">⭐️⭐️⭐️</option>
+            <option value="2">⭐️⭐️</option>
+            <option value="1">⭐️</option>
+        </select>
+
+        <h2 style="color: #4B0066; font-size: 22px; margin-bottom: 10px;">Comments:</h2>
+        <textarea rows="4" placeholder="Leave your feedback..." 
+            style="width: 100%; padding: 10px; font-size: 16px; border: 1px solid #ccc; border-radius: 5px; resize: none;"></textarea>
+        
+        <button class="btn" onclick="location.href='index.html';" 
+            style="background: #4B0066; color: #fff; font-size: 18px; padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer; transition: 0.3s ease; width: 100%; margin-top: 15px;">
+            Submit Review
+        </button>
+    </div>
+</body>
+
+</html>
+

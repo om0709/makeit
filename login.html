@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="title">Makeito Login</h1>
+        </header>
+      <center>  <form action="material_selection.html" method="post">
+            <h2>Login as Customer or Welder</h2>
+            <label for="role"  style="display: block; font-size: 16px; margin-bottom: 5px; color: #4B0066; font-weight: bold;">Select Your Role:</label><br>
+            <select id="role" name="role" required style="width: 53%; padding: 10px; font-size: 16px; border: 2px solid #4B0066; border-radius: 5px; background-color: #f9f9f9; color: #333; margin-bottom: 10px;">
+                <option value="">--Select Role--</option>
+                <option value="customer">Customer</option>
+                <option value="welder">Welder</option>
+            </select>
+            
+            <label for="username" style="display: block; font-size: 16px; margin-bottom: 5px; color: #4B0066; font-weight: bold;">Username:</label>
+            <input type="text" id="username" name="username" required style="width: 50%; padding: 10px; font-size: 16px; border: 2px solid #4B0066; border-radius: 5px; background-color: #f9f9f9; color: #333; margin-bottom: 10px;">
+            
+            <label for="password" style="display: block; font-size: 16px; margin-bottom: 5px; color: #4B0066; font-weight: bold;">Password:</label>
+            <input type="password" id="password" name="password" required style="width: 50%; padding: 10px; font-size: 16px; border: 2px solid #4B0066; border-radius: 5px; background-color: #f9f9f9; color: #333; margin-bottom: 10px;">
+            <br>
+            <button type="submit" class="btn" style="background-color: #4B0066; color: white; padding: 12px 24px; 
+            border: none; cursor: pointer; font-size: 18px; border-radius: 8px; 
+            margin: 10px; transition: 0.3s; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);"
+            >Login</button>
+        </form></center>
+    </div>
+</body>
+</html>
